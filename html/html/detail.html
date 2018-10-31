@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Detail</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <!--CSS-->
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+        <link href="../css/main.css" rel="stylesheet">
+
+        <!--JS-->
+        <script src="../js/jquery-3.1.0.min.js"></script>
+        <script src="../js/main.js"></script>
+    </head>
+    <body>
+        <!--HEADER-->
+        <header>
+            <div id="header-container">
+                <div class="clearfix">
+                    <!--LOGO-->
+                    <div id="logo-header">
+                        <a href="" title="">
+                            <img src="../image/logo.svg" alt=""/>
+                        </a>
+                    </div>
+                    <!--END LOGO-->
+
+                    <!--DESTINATIONS-->
+                    <div id="destination-search">
+                        <div class="tb search-btn">
+                            <div class="tb-cell">
+                                <span class="location-marker inline-btn"></span><a href="" title="">Destinations</a>
+                            </div>
+                        </div>
+                        <div class="result">
+                            <ul>
+                                <li>
+                                    <a href="" title="">Bangkok</a>
+                                </li>
+                                <li>
+                                    <a href="" title="">Ho Chi Minh City</a>
+                                </li>
+                                <li>
+                                    <a href="" title="">Ha noi</a>
+                                </li>
+                                <li>
+                                    <a href="" title="">Singapore</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--END DESTINATIONS-->
+
+                    <!--MENU-->
+                    <div id="header-menu">
+                        <ul class="clearfix">
+                            <li id="become-btn">
+                                <a href="" title="" class="white-btn">Become a host</a>
+                            </li>
+                            <li>
+                                <a href="" title="" class="signup-link">Sign up</a>
+                            </li>
+                            <li>
+                                <a href="" title="" class="login-link">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--END MENU-->
+                </div>
+
+                <!--LOGIN POPUP-->
+                <div class="main-popup" id="login-popup">
+                    <div class="tb">
+                        <div class="tb-cell">
+                            <div class="popup-content">
+                                <div class="popupScroll">
+                                    <div class="popup-row">
+                                        <a href="" class="white-btn fb-btn"><span></span>Log in with Facebook</a>
+                                    </div>
+                                    <div class="popup-row">
+                                        <a href="" class="white-btn gg-btn"><span></span>Log in with Google</a>
+                                    </div>
+                                    <div class="popup-row" style="text-align: center">
+                                        Or email address
+                                    </div>
+                                    <div class="popup-row">
+                                        <input type="text" placeholder="Email address" class="blue-input"/>
+                                    </div>
+                                    <div class="popup-row">
+                                        <input type="password" placeholder="Password" class="blue-input"/>
+                                    </div>
+                                    <div class="popup-row">
+                                        <a href="" class="white-btn pink-btn">Login</a>
+                                    </div>
+                                    <div class="popup-row" style="text-align: center">
+                                        <a href="" title="" class="pink-link">Forgot my password</a>
+                                    </div>
+                                    <div class="popup-row" style="text-align: center">
+                                        Not a member. <a href="" title="" class="blue-link signup-link">Sign up</a> now
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--END LOGIN POPUP-->
+
+                <!--SIGNUP POPUP-->
+                <div class="main-popup" id="signup-popup">
+                    <div class="tb">
+                        <div class="tb-cell">
+                            <div class="popup-content">
+                                <div class="popupScroll">
+                                    <div class="popup-row">
+                                        <a href="" class="white-btn fb-btn"><span></span>Sign up with Facebook</a>
+                                    </div>
+                                    <div class="popup-row">
+                                        <a href="" class="white-btn gg-btn"><span></span>Sign up with Google</a>
+                                    </div>
+                                    <div class="popup-row" style="text-align: center">
+                                        Or
+                                    </div>
+                                    <div class="popup-row">
+                                        <input type="text" placeholder="First name" class="blue-input"/>
+                                    </div>
+                                    <div class="popup-row">
+                                        <input type="text" placeholder="Last name" class="blue-input"/>
+                                    </div>
+                                    <div class="popup-row">
+                                        <input type="text" placeholder="Email address" class="blue-input"/>
+                                    </div>
+                                    <div class="popup-row">
+                                        <input type="password" placeholder="Password" class="blue-input"/>
+                                    </div>
+                                    <div class="popup-row">
+                                        By Signning up an account, you confirm that you
+                                        accept our <a href="" title="" class="blue-link">Terms of Service</a>.
+                                    </div>
+                                    <div class="popup-row">
+                                        <a href="" class="white-btn pink-btn"><span></span>Sign up</a>
+                                    </div>
+                                    <div class="popup-row" style="text-align: center">
+                                        Already a member. <a href="" title="" class="blue-link login-link">Login</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--END SIGNUP POPUP-->
+            </div>
+        </header>
+        <!--END HEADER-->
+
+
+        <!--DETAIL CONTENT-->
+        <div id="detail-content" class="padding-header-content grey-content">
+            <div class="container">
+                <div class="row">
+                    <!--LEFT PANEL-->
+                    <div class="col-xs-8">
+                        <!--BANNER-->
+                        <div class="detail-section left-section">
+                            <div id="detail-banner">
+                                <img src="../image/detail.png" alt=""/>
+                            </div>
+                        </div>
+                        <!--END BANNER-->
+
+                        <!--MEAL IMAGES-->
+                        <div class="detail-section left-section">
+                            <div id="meal-images">
+                                <ul class="clearfix">
+                                    <li>
+                                        <div class="meal-image" style="background-image: url(../image/meal.png)">
+                                            <img src="../image/meal.png" alt=""/>
+                                            <div class="bg"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="meal-image" style="background-image: url(../image/meal.png)">
+                                            <img src="../image/meal.png" alt=""/>
+                                            <div class="bg"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="meal-image" style="background-image: url(../image/meal.png)">
+                                            <img src="../image/meal.png" alt=""/>
+                                            <div class="bg"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="meal-image" style="background-image: url(../image/meal.png)">
+                                            <img src="../image/meal.png" alt=""/>
+                                            <div class="bg"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="meal-image" style="background-image: url(../image/meal.png)">
+                                            <img src="../image/meal.png" alt=""/>
+                                            <div class="bg"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--END MEAL IMAGES-->
+
+                        <div class="detail-section left-section">
+                            <div class="padding-content">
+                                <div class="section-title">ABOUT THE MEAL</div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac eros pharetra orci
+                                    sodales venenatis. Nunc lacinia malesuada felis nec vehicula. Duis eu sapien commodo,
+                                    semper enim in, maximus nisi. Pellentesque maximus varius lectus non maximus.
+                                    Donec faucibus nisl a imperdiet vehicula. Vivamus ac enim sed magna luctus malesuada
+                                    ac quis nisi. Sed feugiat lacus at pellentesque vulputate. </p>
+                            </div>
+                        </div>
+
+                        <!--MEAL INFORMATION-->
+                        <div class="detail-section left-section">
+                            <div class="padding-content">
+                                <div id="meal-information">
+                                    <div class="section-title">INFORMATION</div>
+                                    <div class="information">
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <strong>Meal type:</strong> Dinner<br/>
+                                                <strong>Cuisine style:</strong> Vietnamese<br/>
+                                                <strong>Minimum guests:</strong> 1<br/>
+                                                <strong>Maximum guests:</strong> 4<br/>
+                                                <strong>Suitable for:</strong> Family<br/>
+                                                <strong>Preferences:</strong> Vegeterian, Organic<br/>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <strong>Time:</strong> 18:00 to 21:00<br/>
+                                                <strong>Alcohol:</strong> Guest can bring alcohol<br/>
+                                                <strong>Wifi:</strong> Available<br/>
+                                                <strong>Air conditioning:</strong> Yes<br/>
+                                                <strong>Nearby Public transport:</strong> Yes<br/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--END MEAL INFORMATION-->
+
+                        <!--MENU-->
+                        <div class="detail-section left-section">
+                            <div class="padding-content">
+                                <div id="meal-menu">
+                                    <div class="section-title">MENU</div>
+                                    <div class="menu">
+                                        <ul>
+                                            <li>
+                                                <div class="single-meal">
+                                                    <div class="meal-title">
+                                                        <h3>Lorem ipsum dolor sit amet</h3>
+                                                    </div>
+                                                    <div class="meal-des">
+                                                        <p>Lorem ipsum, dolor sit amet, consectetur adipiscing elit. </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="single-meal">
+                                                    <div class="meal-title">
+                                                        <h3>Lorem ipsum dolor sit amet</h3>
+                                                    </div>
+                                                    <div class="meal-des">
+                                                        <p>Lorem ipsum, dolor sit amet, consectetur adipiscing elit. </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="single-meal">
+                                                    <div class="meal-title">
+                                                        <h3>Lorem ipsum dolor sit amet</h3>
+                                                    </div>
+                                                    <div class="meal-des">
+                                                        <p>Lorem ipsum, dolor sit amet, consectetur adipiscing elit. </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="single-meal">
+                                                    <div class="meal-title">
+                                                        <h3>Lorem ipsum dolor sit amet</h3>
+                                                    </div>
+                                                    <div class="meal-des">
+                                                        <p>Lorem ipsum, dolor sit amet, consectetur adipiscing elit. </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="single-meal">
+                                                    <div class="meal-title">
+                                                        <h3>Lorem ipsum dolor sit amet</h3>
+                                                    </div>
+                                                    <div class="meal-des">
+                                                        <p>Lorem ipsum, dolor sit amet, consectetur adipiscing elit. </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--END MENU-->
+
+
+                        <!--MAP-->
+                        <div class="detail-section left-section">
+                            <div class="padding-content">
+                                <div class="section-title">
+                                    LOCATION
+                                    <span class="sub-title">Address released upon joining</span>
+                                </div>
+                                <div id="map">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15957.313714874012!2d100.64589286294037!3d13.732973939353034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d61b19ccd2b41%3A0x51804c091f21fc45!2sOasis+Pattanakarn+53!5e0!3m2!1svi!2sth!4v1471690137832" 
+                                            style="border:0; width: 100%"     width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <!--END MAP-->
+
+
+                        <!--REVIEW-->
+                        <div class="detail-section left-section">
+                            <div class="padding-content">
+                                <div id="meal-review">
+                                    <div class="section-title">REVIEW</div>
+                                    <div class="review">
+                                        <ul>
+                                            <li>
+                                                <div class="single-review">
+                                                    <div class="review-person">
+                                                        <a href="" title="">Samantha</a>
+                                                        <div class="review-rate">
+                                                            <ul class="clearfix">
+                                                                <li class="start-on"></li>
+                                                                <li class="start-on"></li>
+                                                                <li class="start-on"></li>
+                                                                <li class="start-on"></li>
+                                                                <li class="start-off"></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="meal-des">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel nibh nec ex euismod
+                                                            laoreet a sit amet ante. Mauris varius malesuada auctor. Duis pulvinar ex id dolor pretium
+                                                            egestas. Vestibulum pretium, nisl nec sodales mollis, mauris mauris lacinia diam,
+                                                            sit amet dignissim enim mi tempus ex.</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="single-review">
+                                                    <div class="review-person">
+                                                        <a href="" title="">Samantha</a>
+                                                        <div class="review-rate">
+                                                            <ul class="clearfix">
+                                                                <li class="start-on"></li>
+                                                                <li class="start-on"></li>
+                                                                <li class="start-on"></li>
+                                                                <li class="start-on"></li>
+                                                                <li class="start-off"></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="meal-des">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel nibh nec ex euismod
+                                                            laoreet a sit amet ante. Mauris varius malesuada auctor. Duis pulvinar ex id dolor pretium
+                                                            egestas. Vestibulum pretium, nisl nec sodales mollis, mauris mauris lacinia diam,
+                                                            sit amet dignissim enim mi tempus ex.</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--END REVIEW-->
+                    </div>
+                    <!--END LEFP PANEL-->
+
+                    <!--RIGHT PANEL-->
+                    <div class="col-xs-4">
+
+                        <div class="detail-section right-section">
+                            <div class="padding-content">
+                                <div id="meal-info">
+                                    <div class="form-row">
+                                        <h1>Vivamus pulvinar lectus
+                                            nec ex vestibulum</h1>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="meal-host">
+                                            Host by <a href="" title="" class="blue-link">Phuongnam</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="price">
+                                            <span>$20</span> / guest
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="inputs">
+                                            <ul class="clearfix">
+                                                <li class="calendar">
+                                                    <input type="text" class="blue-input" placeholder="Select date"/>
+                                                </li>
+                                                <li class="guest">
+                                                    <select class="blue-input" name="">
+                                                        <option value="" selected="selected">Guest</option>
+                                                        <option value="">1</option>
+                                                        <option value="">2</option>
+                                                    </select>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <input type="button" class="white-btn pink-btn" value="Request Meal"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="detail-section right-section">
+                            <div class="section-header-bar">
+                                HOW REQUESTING WORKS
+                            </div>
+                            <div class="padding-content">
+                                <div id="meal-inst">
+                                    <ul>
+                                        <li>
+                                            <span class="number">1</span>
+                                            <p>Suggest a date for a meal to the host.
+                                                Select how many guests you would
+                                                like to bring.</p>
+                                        </li>
+                                        <li>
+                                            <span class="number">2</span>
+                                            <p>After clicking "request meal", the host will
+                                                then message you about availability. You
+                                                will not be charged to send a request.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--MEAL HOST-->
+                        <div class="detail-section right-section">
+                            <div class="padding-content">
+                                <div id="meal-host">
+                                    <div class="common-info">
+                                        <div class="image">
+                                            <img src="../image/host.png" alt=""/>
+                                        </div>
+                                        <div class="host-name">
+                                            Samantha Phuong
+                                        </div>
+                                        <div class="location">
+                                            <a href="" title="" class="blue-link"><span></span> Bangkok</a>
+                                        </div>
+                                    </div>
+                                    <div class="specific-info">
+                                        <ul>
+                                            <li><strong>Language: </strong> English, Thai</li>
+                                            <li><strong>Profession: </strong> HOme cook</li>
+                                            <li><strong>Interests: </strong> Food, Travel, Music</li>
+                                            <li><strong>I host with: </strong> My family</li>
+                                            <li><strong>About Me: </strong> Lorem ipsum dolor sit amet conse
+                                                adipiscing elit. Suspendisse ac eros pharetra
+                                                sodales venenatis. Nunc lacinia malesuada
+                                                nec vehicula. Duis eu sapien commodo,
+                                                semper enim in.. <a href="" class=blue-link" title="">Read more</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--END MEAL HOST-->
+
+                        <div class="detail-section right-section" id="meal-detail-ctrls">
+                            <div class="ctrls">
+                                <ul class="clearfix">
+                                    <li>
+                                        <a href="" title="" class="white-btn yellow-btn">View full profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="white-btn grey-btn" title="">Manage this host</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--END DETAIL CONTENT-->
+    </body>
+</html>

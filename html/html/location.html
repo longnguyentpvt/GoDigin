@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Location</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <!--CSS-->
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+        <link href="../css/main.css" rel="stylesheet">
+
+        <!--JS-->
+        <script src="../js/jquery-3.1.0.min.js"></script>
+        <script src="../js/main.js"></script>
+    </head>
+    <body>
+        <!--HEADER-->
+        <header>
+            <div id="header-container">
+                <div class="clearfix">
+                    <!--LOGO-->
+                    <div id="logo-header">
+                        <a href="" title="">
+                            <img src="../image/logo.svg" alt=""/>
+                        </a>
+                    </div>
+                    <!--END LOGO-->
+
+                    <!--DESTINATIONS-->
+                    <div id="destination-search">
+                        <div class="tb search-btn">
+                            <div class="tb-cell">
+                                <span class="location-marker inline-btn"></span><a href="" title="">Destinations</a>
+                            </div>
+                        </div>
+                        <div class="result">
+                            <ul>
+                                <li>
+                                    <a href="" title="">Bangkok</a>
+                                </li>
+                                <li>
+                                    <a href="" title="">Ho Chi Minh City</a>
+                                </li>
+                                <li>
+                                    <a href="" title="">Ha noi</a>
+                                </li>
+                                <li>
+                                    <a href="" title="">Singapore</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--END DESTINATIONS-->
+
+                    <!--MENU-->
+                    <div id="header-menu">
+                        <ul class="clearfix">
+                            <li id="become-btn">
+                                <a href="" title="" class="white-btn">Become a host</a>
+                            </li>
+                            <li>
+                                <a href="" title="" class="signup-link">Sign up</a>
+                            </li>
+                            <li>
+                                <a href="" title="" class="login-link">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--END MENU-->
+                </div>
+
+                <!--LOGIN POPUP-->
+                <div class="main-popup" id="login-popup">
+                    <div class="tb">
+                        <div class="tb-cell">
+                            <div class="popup-content">
+                                <div class="popupScroll">
+                                    <div class="popup-row">
+                                        <a href="" class="white-btn fb-btn"><span></span>Log in with Facebook</a>
+                                    </div>
+                                    <div class="popup-row">
+                                        <a href="" class="white-btn gg-btn"><span></span>Log in with Google</a>
+                                    </div>
+                                    <div class="popup-row" style="text-align: center">
+                                        Or email address
+                                    </div>
+                                    <div class="popup-row">
+                                        <input type="text" placeholder="Email address" class="blue-input"/>
+                                    </div>
+                                    <div class="popup-row">
+                                        <input type="password" placeholder="Password" class="blue-input"/>
+                                    </div>
+                                    <div class="popup-row">
+                                        <a href="" class="white-btn pink-btn">Login</a>
+                                    </div>
+                                    <div class="popup-row" style="text-align: center">
+                                        <a href="" title="" class="pink-link">Forgot my password</a>
+                                    </div>
+                                    <div class="popup-row" style="text-align: center">
+                                        Not a member. <a href="" title="" class="blue-link signup-link">Sign up</a> now
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--END LOGIN POPUP-->
+
+                <!--SIGNUP POPUP-->
+                <div class="main-popup" id="signup-popup">
+                    <div class="tb">
+                        <div class="tb-cell">
+                            <div class="popup-content">
+                                <div class="popupScroll">
+                                    <div class="popup-row">
+                                        <a href="" class="white-btn fb-btn"><span></span>Sign up with Facebook</a>
+                                    </div>
+                                    <div class="popup-row">
+                                        <a href="" class="white-btn gg-btn"><span></span>Sign up with Google</a>
+                                    </div>
+                                    <div class="popup-row" style="text-align: center">
+                                        Or
+                                    </div>
+                                    <div class="popup-row">
+                                        <input type="text" placeholder="First name" class="blue-input"/>
+                                    </div>
+                                    <div class="popup-row">
+                                        <input type="text" placeholder="Last name" class="blue-input"/>
+                                    </div>
+                                    <div class="popup-row">
+                                        <input type="text" placeholder="Email address" class="blue-input"/>
+                                    </div>
+                                    <div class="popup-row">
+                                        <input type="password" placeholder="Password" class="blue-input"/>
+                                    </div>
+                                    <div class="popup-row">
+                                        By Signning up an account, you confirm that you
+                                        accept our <a href="" title="" class="blue-link">Terms of Service</a>.
+                                    </div>
+                                    <div class="popup-row">
+                                        <a href="" class="white-btn pink-btn"><span></span>Sign up</a>
+                                    </div>
+                                    <div class="popup-row" style="text-align: center">
+                                        Already a member. <a href="" title="" class="blue-link login-link">Login</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--END SIGNUP POPUP-->
+            </div>
+        </header>
+        <!--END HEADER-->
+
+        <!--CONTENT-->
+        <div id="location-content">
+            <div class="container">
+                <div id="location-no-result">
+                    38 HOME COOK IN <a href="" class="blue-link">BANGKOK</a>
+                </div>
+                <div id="recommended-meals">
+                    <ul class="clearfix">
+                        <li>
+                            <div class="single-meal">
+                                <div class="meal-cover" style="background-image: url(../image/meal.png)">
+                                    <a href="" title="">
+                                        <img src="../image/meal.png" alt/>
+                                    </a>
+                                    <span class="meal-price">$20</span>
+                                </div>
+                                <div class="meal-info">
+                                    <div class="meal-name">
+                                        <h4><a href="" title="">Lorem ipsum dolor sit amet</a></h4>
+                                        with <a href="" title="">Phuongsam</a>
+                                    </div>
+                                    <div class="meal-host">
+                                        <img src="../image/host.png" alt=""/>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="single-meal">
+                                <div class="meal-cover" style="background-image: url(../image/meal.png)">
+                                    <a href="" title="">
+                                        <img src="../image/meal.png" alt/>
+                                    </a>
+                                    <span class="meal-price">$20</span>
+                                </div>
+                                <div class="meal-info">
+                                    <div class="meal-name">
+                                        <h4><a href="" title="">Lorem ipsum dolor sit amet</a></h4>
+                                        with <a href="" title="">Phuongsam</a>
+                                    </div>
+                                    <div class="meal-host">
+                                        <img src="../image/host.png" alt=""/>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="single-meal">
+                                <div class="meal-cover" style="background-image: url(../image/meal.png)">
+                                    <a href="" title="">
+                                        <img src="../image/meal.png" alt/>
+                                    </a>
+                                    <span class="meal-price">$20</span>
+                                </div>
+                                <div class="meal-info">
+                                    <div class="meal-name">
+                                        <h4><a href="" title="">Lorem ipsum dolor sit amet</a></h4>
+                                        with <a href="" title="">Phuongsam</a>
+                                    </div>
+                                    <div class="meal-host">
+                                        <img src="../image/host.png" alt=""/>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="single-meal">
+                                <div class="meal-cover" style="background-image: url(../image/meal.png)">
+                                    <a href="" title="">
+                                        <img src="../image/meal.png" alt/>
+                                    </a>
+                                    <span class="meal-price">$20</span>
+                                </div>
+                                <div class="meal-info">
+                                    <div class="meal-name">
+                                        <h4><a href="" title="">Lorem ipsum dolor sit amet</a></h4>
+                                        with <a href="" title="">Phuongsam</a>
+                                    </div>
+                                    <div class="meal-host">
+                                        <img src="../image/host.png" alt=""/>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="single-meal">
+                                <div class="meal-cover" style="background-image: url(../image/meal.png)">
+                                    <a href="" title="">
+                                        <img src="../image/meal.png" alt/>
+                                    </a>
+                                    <span class="meal-price">$20</span>
+                                </div>
+                                <div class="meal-info">
+                                    <div class="meal-name">
+                                        <h4><a href="" title="">Lorem ipsum dolor sit amet</a></h4>
+                                        with <a href="" title="">Phuongsam</a>
+                                    </div>
+                                    <div class="meal-host">
+                                        <img src="../image/host.png" alt=""/>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="single-meal">
+                                <div class="meal-cover" style="background-image: url(../image/meal.png)">
+                                    <a href="" title="">
+                                        <img src="../image/meal.png" alt/>
+                                    </a>
+                                    <span class="meal-price">$20</span>
+                                </div>
+                                <div class="meal-info">
+                                    <div class="meal-name">
+                                        <h4><a href="" title="">Lorem ipsum dolor sit amet</a></h4>
+                                        with <a href="" title="">Phuongsam</a>
+                                    </div>
+                                    <div class="meal-host">
+                                        <img src="../image/host.png" alt=""/>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="single-meal">
+                                <div class="meal-cover" style="background-image: url(../image/meal.png)">
+                                    <a href="" title="">
+                                        <img src="../image/meal.png" alt/>
+                                    </a>
+                                    <span class="meal-price">$20</span>
+                                </div>
+                                <div class="meal-info">
+                                    <div class="meal-name">
+                                        <h4><a href="" title="">Lorem ipsum dolor sit amet</a></h4>
+                                        with <a href="" title="">Phuongsam</a>
+                                    </div>
+                                    <div class="meal-host">
+                                        <img src="../image/host.png" alt=""/>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="single-meal">
+                                <div class="meal-cover" style="background-image: url(../image/meal.png)">
+                                    <a href="" title="">
+                                        <img src="../image/meal.png" alt/>
+                                    </a>
+                                    <span class="meal-price">$20</span>
+                                </div>
+                                <div class="meal-info">
+                                    <div class="meal-name">
+                                        <h4><a href="" title="">Lorem ipsum dolor sit amet</a></h4>
+                                        with <a href="" title="">Phuongsam</a>
+                                    </div>
+                                    <div class="meal-host">
+                                        <img src="../image/host.png" alt=""/>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="single-meal">
+                                <div class="meal-cover" style="background-image: url(../image/meal.png)">
+                                    <a href="" title="">
+                                        <img src="../image/meal.png" alt/>
+                                    </a>
+                                    <span class="meal-price">$20</span>
+                                </div>
+                                <div class="meal-info">
+                                    <div class="meal-name">
+                                        <h4><a href="" title="">Lorem ipsum dolor sit amet</a></h4>
+                                        with <a href="" title="">Phuongsam</a>
+                                    </div>
+                                    <div class="meal-host">
+                                        <img src="../image/host.png" alt=""/>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="show-more-btn">
+                    <input type="button" value="Show more" onclick="msg()" class="white-btn pink-btn">
+                </div>
+            </div>
+        </div>
+        <!--END CONTENT-->
+
+        <!--FOOTER-->
+        <footer>
+            <div id="footer">
+                <div class="container">
+                    <div id="footer-container">
+
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <div class="footer-title">
+                                    <strong>CITIES</strong>
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <div class="footer-title">
+                                            <strong>COMPANY</strong>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <div class="footer-title">
+                                            <strong>SOCIAL</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <div class="footer-list">
+                                            <ul>
+                                                <li>
+                                                    <a href="" title="">Bangkok</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">Ho Chi Minh City</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">Hanoi</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">Jarkatar</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">Kuala Lampur</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">Singapore</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-6">
+                                        <div class="footer-list">
+                                            <ul>
+                                                <li>
+                                                    <a href="" title="">Chiangmai</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">Danang</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">Hue</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">Phnoim penh</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <div class="footer-list">
+                                            <ul>
+                                                <li>
+                                                    <a href="" title="">About</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">Term and Conditions</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">Privacy Policy</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">Trust</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">FAQ</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">Help</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <div class="footer-list">
+                                            <ul>
+                                                <li>
+                                                    <a href="" title="">Facebook</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">Twitter</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">Instagram</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" title="">Pinterest</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--END FOOTER-->
+    </body>
+</html>
